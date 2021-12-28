@@ -1,0 +1,12 @@
+$popin: Poppins, sans-serif;
+$green: #02897A;
+
+
+@mixin text ($ff, $fs, $fw, $fz, $lh, $cr){
+  font-family: $ff;
+  font-style: $fs;
+  font-weight: $fw;
+  font-size: $fz;
+  line-height: $lh;
+  color: $cr;
+}

@@ -1,0 +1,60 @@
+.footer{
+  padding: 154px 0 46px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__images{
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 32px;
+  }
+  &__icons{
+    display: flex;
+    column-gap: 16px;
+  }
+  &__icon{
+    color: #02897A;
+  }
+  &__center{
+    display: flex;
+    flex-direction: row;
+    column-gap: 153px;
+  }
+  &__title{
+    @include text($popin, normal, 500, 20px, 30px, #22343D);
+    margin-bottom: 8px;
+  }
+  &__item{
+    @include text($popin, normal, normal, 16px, 35px, #22343D);
+    margin-bottom: 13px;
+  }
+  &__reg{
+    display: flex;
+    flex-direction: column;
+    input{
+      width: 325px;
+      height: 50px;
+      background: #FFFFFF;
+      border: 1px solid #BCD0E5;
+      border-radius: 4px;
+      margin: 34px 0 21px;
+    }
+  }
+  &__btn{
+    @include text($popin, normal, bold, 16px, 24px, #fff);
+    width: 130px;
+    height: 40px;
+    background: #02897A;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  &__subtitle{
+    @include text($popin, normal, normal, 16px, 30px, #22343D);
+    text-align: center;
+    margin-top: 20px;
+  }
+}

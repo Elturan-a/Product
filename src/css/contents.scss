@@ -1,0 +1,36 @@
+.contents{
+  padding: 350px 0 150px;
+  z-index: 2;
+
+  &__title{
+    @include text($popin, normal, bold, 34px, 51px, #22343D);
+  }
+  &__subtitle{
+    @include text($popin, normal, 500, 16px, 26px, #22343D);
+    margin: 8px 0 33px;
+  }
+  &__card{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  &__img{
+    width: 100%;
+    border-radius: 3px;
+  }
+  &__text{
+    @include text($popin, normal, normal, 16px, 28px, #22343D);
+    margin: 24px 0 12px;
+    span{
+     color: #000;
+    }
+  }
+  &__news{
+    @include text($popin, normal, bold, 24px, 40px, #22343D);
+    text-align: start;
+    &-green{
+      @include text($popin, normal, bold, 24px, 40px, #02897A);
+      margin-bottom: 64px;
+    }
+  }
+}

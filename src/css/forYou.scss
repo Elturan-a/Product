@@ -1,0 +1,60 @@
+.forYou{
+  background: url("../images/forYou/Bg (2).png") center/cover no-repeat;
+  padding-bottom: 169px;
+  &__title{
+    @include text($popin, normal,bold, 32px, 48px, #22343D);
+    text-align: center;
+    margin-bottom: 66px;
+  }
+  &__list{
+    display: flex;
+    justify-content: space-between;
+    &-icon{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &-link{
+      color: #fff;
+    }
+    &-mouse{
+      background: #02897A;
+      border-radius: 19px;
+    }
+    &-wave{
+      background: #4D8DFF;
+      border-radius: 19px;
+    }
+    &-heart{
+      background: #740A76;
+      border-radius: 19px;
+    }
+    &-hour{
+      background: #F03E3D;
+      border-radius: 19px;
+    }
+    &-title{
+      @include text($popin, normal, 600, 22px, 33px, #22343D);
+      margin: 30px 0 13px;
+    }
+    &-text{
+      @include text($popin, normal, normal, 16px, 26px, #22343D);
+      margin-bottom: 60px;
+    }
+  }
+  &__btn{
+    text-align: center;
+  }
+  &__button{
+    @include text($popin, normal, bold, 16px, 24px, #fff);
+    width: 175px;
+    height: 53px;
+    background: $green;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

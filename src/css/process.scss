@@ -1,0 +1,74 @@
+.process{
+  padding: 220px 0 165px;
+  text-align: center;
+  background: url("../images/process/Bg.svg") center/cover no-repeat;
+
+  &__title{
+    @include text($popin, normal, bold, 32px, 48px, #22343D);
+  }
+  &__subtitle{
+    @include text($popin, normal, 500, 16px, 26px, #22343D);
+    margin: 16px 0 32px;
+  }
+  &__avatar{
+    display: flex;
+    position: relative;
+    &-pitch{
+      display: flex;
+      position: absolute;
+      align-items: center;
+      column-gap: 41px;
+      top: 30px;
+      left: 0;
+    }
+    &-website{
+      display: flex;
+      position: absolute;
+      align-items: center;
+      column-gap: 41px;
+      top: 200px;
+      left: 60px;
+    }
+    &-app{
+      display: flex;
+      position: absolute;
+      align-items: center;
+      column-gap: 41px;
+      top: 30px;
+      right: 0;
+    }
+    &-strategy{
+      display: flex;
+      position: absolute;
+      align-items: center;
+      column-gap: 41px;
+      top: 200px;
+      right: 60px;
+    }
+    &-text{
+      @include text($popin, normal, 500, 16px, 24px, #2F281E);
+      padding: 15px 0;
+      width: 274px;
+      height: 53px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 15px rgba(23, 58, 86, 0.1);
+      border-radius: 26.5px;
+    }
+  }
+  &__button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 350px;
+    right: 480px;
+    @include text($popin, normal, bold, 16px, 24px, #fff);
+    width: 216px;
+    height: 53px;
+    background: #02897A;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}

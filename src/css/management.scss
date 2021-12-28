@@ -1,0 +1,29 @@
+.management{
+  padding: 169px 0 150px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__left{
+    &-check{
+      @include text($popin, normal, 600, 16px, 24px, #22343D);
+    }
+    &-title{
+      @include text($popin, normal, bold, 32px, 48px, #22343D);
+      margin: 8px 0 23px;
+    }
+    &-text{
+      @include text($popin, normal, normal, 16px, 26px, #22343D);
+    }
+    &-subtitle{
+      @include text($popin, normal, 600, 16px, 26px, #22343D);
+      margin: 27px 0 12px;
+    }
+  }
+  &__right{
+    &-img{
+      width: 100%;
+    }
+  }
+}

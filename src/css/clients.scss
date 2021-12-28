@@ -1,0 +1,55 @@
+.clients{
+  padding-bottom: 157px;
+  &__title{
+    @include text($popin, normal, bold, 34px, 57px, #22343D);
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  &__subtitle{
+    @include text($popin, normal, 500, 16px, 28px, #22343D);
+    margin: 8px 0 50px;
+    text-align: center;
+    letter-spacing: 0.2px;
+  }
+  &__row{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 64px;
+  }
+  &__list{
+    display: flex;
+    align-items: center;
+    column-gap: 14px;
+    &-right{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__card{
+    width: calc(33.33333% - 46.66666px);
+    padding: 26px;
+    background: #FFFFFF;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+  }
+  &__star{
+    color: #F3CD03;
+  }
+  &__emptystar{
+    color: #F3CD03;
+  }
+  &__text{
+    @include text($popin, normal, normal, 16px, 28px, #737373);
+   margin: 16px 0;
+    letter-spacing: 0.2px;
+  }
+  &__name{
+    @include text($popin, normal, 600, 16px, 24px, $green);
+    letter-spacing: 0.2px;
+  }
+  &__prof{
+    @include text($popin, normal, 500, 14px, 24px, #252B42);
+    letter-spacing: 0.2px;
+  }
+}

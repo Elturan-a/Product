@@ -1,0 +1,29 @@
+.collab{
+  padding: 150px 0 170px;
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  &__left{
+    &-info{
+      @include text($popin, normal, 600, 16px, 24px, #22343D);
+    }
+    &-title{
+      @include text($popin, normal, bold, 32px, 48px, #22343D);
+      margin: 8px 0 23px;
+    }
+    &-subtitle{
+      @include text($popin, normal, 600, 16px, 26px, #22343D);
+      margin: 27px 0 12px;
+    }
+    &-text{
+      @include text($popin, normal, normal, 16px, 26px, #22343D);
+    }
+  }
+  &__right{
+    &-img{
+      width: 100%;
+    }
+  }
+}

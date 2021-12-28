@@ -1,0 +1,99 @@
+.price{
+  padding-bottom: 150px;
+  &__title{
+    @include text($popin, normal, bold, 34px, 51px, #22343D);
+    text-align: center;
+  }
+  &__subtitle{
+    @include text($popin, normal, 500, 16px, 24px, #22343D);
+    margin: 8px 0 50px;
+    text-align: center;
+  }
+  &__table{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 70px;
+    &-price{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      column-gap: 8px;
+      &-right{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 7px;
+      }
+    }
+    &-card{
+      width: calc(33.33333% - 46.66666px);
+      padding: 24px 0 32px;
+      background: #FFFFFF;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+      border-radius: 8px;
+      text-align: center;
+      &:hover{
+        background: #02897A;
+        .price__table-title{
+          color: #fff;
+        }
+        .price__table-subtitle{
+          color: #fff;
+        }
+        .price__table-cost{
+          color: #FFFFFF;
+        }
+        .price__table-text-green{
+          color: #FFFFFF;
+        }
+        .price__table-text{
+          color: #FFFFFF;
+        }
+        .price__table-item{
+          color: #FFFFFF;
+        }
+        .price__table-btn{
+          color: black;
+          background: #FFFFFF;
+        }
+      }
+    }
+    &-title{
+      @include text($popin, normal, bold, 24px, 40px, #22343D);
+    }
+    &-subtitle{
+      @include text($popin, normal, normal, 16px, 40px, #22343D);
+      margin: 8px 0 16px;
+    }
+    &-cost{
+      @include text($popin, normal, bold, 76px, 100px, $green);
+      letter-spacing: 0.2px;
+    }
+    &-text{
+      @include text($popin, normal, normal, 16px, 19px, #AFAFAF);
+      letter-spacing: 0.1px;
+      &-green{
+        @include text($popin, normal, bold, 24px, 30px, $green);
+        letter-spacing: 0.1px;
+      }
+    }
+    &-list{
+      margin: 40px;
+    }
+    &-item{
+      @include text($popin, normal, 500, 16px, 22px, #22343D);
+      letter-spacing: 0.2px;
+      margin: 16px 0;
+    }
+    &-btn{
+      @include text($popin, normal, 600, 18px, 22px, #FFFFFF);
+      width: 139px;
+      height: 44px;
+      background: #02897A;
+      border-radius: 8px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}

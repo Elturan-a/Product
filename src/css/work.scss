@@ -1,0 +1,40 @@
+.work{
+  padding: 25px 0 114px;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+  }
+  &__left{
+    &-title{
+      @include text($popin, normal, bold, 40px, 60px, #22343D);
+      margin-top: 145px;
+    }
+    &-text{
+      @include text($popin, normal, normal, 18px, 28px, #22343D);
+      margin: 18px 0 45px;
+    }
+    &-button{
+      @include text($popin, normal, bold, 16px, 22px, #fff);
+      width: 175px;
+      height: 53px;
+      background: $green;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-right: 30px;
+    }
+    &-icon{
+      color: $green;
+    }
+    &-link{
+      @include text($popin, normal, 600, 16px, 22px, $green);
+    }
+  }
+  &__right{
+    &-img{
+      width: 100%;
+    }
+  }
+}
